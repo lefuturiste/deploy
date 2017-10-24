@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "latest",
+    "gulp-minify": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest",
+    "gulp-sass-glob-import": "^0.1.0",
+    "gulp-uglify": "^2.1.2",
+    "node-bourbon": "^4.2.8"
+  }
+}
