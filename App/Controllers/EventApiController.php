@@ -69,6 +69,7 @@ class EventApiController extends Controller
 								$embed->image($body['user_avatar']);
 								$embed->field('Target server', $domainData['ssh']['host']);
 								$commits = new Embed();
+								$commits->title('list of commits :');
 								foreach ($body['commits'] AS $commit){
 									$commits->field($commit['author']['name'], $commit['message']);
 								}
