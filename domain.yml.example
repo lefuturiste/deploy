@@ -1,0 +1,11 @@
+fr_lefuturiste_api:
+    ssh:
+      host: xxx
+      username: xxx
+      password: xxx
+      port: xxx
+    deploy_command: ifconfig
+    discord_webhook: https://discordapp.com/api/webhooks/xxx/xxx
+    events:
+      tag_push: true
+      push: true
