@@ -54,7 +54,7 @@ class EventApiController extends Controller
 								$tag = str_replace('refs/tags/', '', $body['ref']);
 								$embed->title("New tag push on {$body['project']['path_with_namespace']}");
 								$embed->url($body['project']['web_url']);
-								$embed->image($body['user_avatar']);
+//								$embed->image($body['user_avatar']);
 								$embed->description("{$body['user_name']} pushed tag {$tag} on {$body['project']['path_with_namespace']}");
 								$embed->field('Target server', $domainData['ssh']['host']);
 								$webhook->embed($embed)->send();
@@ -66,7 +66,7 @@ class EventApiController extends Controller
 								$embed->title("New(s) commit(s) pushed on {$body['project']['path_with_namespace']}");
 								$embed->description("By **{$body['user_name']}**");
 								$embed->url($body['project']['web_url']);
-								$embed->image($body['user_avatar']);
+//								$embed->image($body['user_avatar']);
 								$embed->field('Target server', $domainData['ssh']['host']);
 								$commits = new Embed();
 								$commits->title('list of commits :');
