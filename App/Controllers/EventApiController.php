@@ -55,7 +55,7 @@ class EventApiController extends Controller
 								$embed->title("New tag push on {$body['project']['path_with_namespace']}");
 								$embed->url($body['project']['web_url']);
 								$embed->image($body['user_avatar']);
-								$embed->description("{$body['user_name']} pushed tag {$tag} on {$body['project']['project']}");
+								$embed->description("{$body['user_name']} pushed tag {$tag} on {$body['project']['path_with_namespace']}");
 								$embed->field('Target server', $domainData['ssh']['host']);
 								$webhook->embed($embed)->send();
 								break;
