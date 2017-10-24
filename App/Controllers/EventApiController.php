@@ -57,7 +57,12 @@ class EventApiController extends Controller
 //								$embed->image($body['user_avatar']);
 								$embed->description("{$body['user_name']} pushed tag {$tag} on {$body['project']['path_with_namespace']}");
 								$embed->field('Target server', $domainData['ssh']['host']);
-								$webhook->embed($embed)->send();
+								$commits = new Embed();
+								$commits->title('list of commits :');
+								foreach ($body['commits'] AS $commit){
+									$commits->field($commit['author']['name'], $commit['message']);
+								}
+								$webhook->embed($embed)->embed($commits)->send();
 								break;
 
 							case 'push':
