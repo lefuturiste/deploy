@@ -35,6 +35,6 @@
         "lefuturiste/config": "^0.2.0",
         "phpseclib/phpseclib": "^2.0",
         "symfony/yaml": "^3.3",
-        "lefuturiste/discord-webhooks": "^0.2.2"
+        "lefuturiste/discord-webhooks": "^0.2.3"
     }
 }
